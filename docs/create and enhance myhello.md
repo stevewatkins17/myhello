@@ -65,3 +65,9 @@ To replicate someone else's venv
 ```
 $ pip install -r C:\Users\stevewatkins\AppData\Local\Programs\Python\Python311\code_louisville\Scripts\requirements.txt
 ```
+## .gitignore
+A .gitignore file is used by git to ignore files, filtered by pattern or explicit name. Pathing should be relative.
+
+Templates abound: 
+- https://www.toptal.com/developers/gitignore/  (Use tags "Python" & "VisualStudioCode")
+- https://github.com/microsoft/vscode-python/blob/main/.gitignore

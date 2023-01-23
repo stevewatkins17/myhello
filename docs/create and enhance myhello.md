@@ -65,3 +65,8 @@ A .gitignore file is used by git to ignore files, filtered by pattern or explici
 Templates abound: 
 - https://www.toptal.com/developers/gitignore/  (Use tags "Python" & "VisualStudioCode")
 - https://github.com/microsoft/vscode-python/blob/main/.gitignore
+
+## test pytest
+```
+pytest
+```

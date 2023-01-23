@@ -14,11 +14,13 @@ this readme.md
 venv: code_louisville
 env: base PY 3.11 on Windows 11
 
-Powershell workflow & vscode activate:
+WIndows 11 CMD workflow & vscode activate:
 
 ### in root Python folder, open cmd & run
 ```
-PS C:\Users\stevewatkins\AppData\Local\Programs\Python\Python311> python -m venv code_louisville
+python -c "import os, sys; print(os.path.dirname(sys.executable))"
+cd C:\Users\stevewatkins\AppData\Local\Programs\Python\Python311
+C:\Users\stevewatkins\AppData\Local\Programs\Python\Python311> python -m venv code_louisville
 ```
 ### cd to "\code_louisville\Scripts" and exe ps1 as admin
 ```

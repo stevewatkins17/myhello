@@ -14,15 +14,21 @@ this readme.md
 venv: code_louisville
 env: base PY 3.11 on Windows 11
 
-WIndows 11 CMD workflow & vscode activate:
+Powershell workflow & vscode activate:
 
 ### in root Python folder, open cmd & run
 ```
-python -c "import os, sys; print(os.path.dirname(sys.executable))"
-cd C:\Users\stevewatkins\AppData\Local\Programs\Python\Python311
-C:\Users\stevewatkins\AppData\Local\Programs\Python\Python311> python -m venv code_louisville
+PS C:\Users\stevewatkins\AppData\Local\Programs\Python\Python311> python -m venv code_louisville
 ```
-
+### cd to "\code_louisville\Scripts" and exe ps1 as admin
+```
+PS C:\Users\stevewatkins\AppData\Local\Programs\Python\Python311> cd code_louisville\Scripts
+```
+### to test activate (security people love this...maybe not)
+```
+PS C:\Users\stevewatkins\AppData\Local\Programs\Python\Python311\code_louisville\Scripts> Set-ExecutionPolicy Unrestricted
+PS C:\Users\stevewatkins\AppData\Local\Programs\Python\Python311\code_louisville\Scripts> C:\Users\stevewatkins\AppData\Local\Programs\Python\Python311\code_louisville\Scripts\Activate.ps1
+```
 
 ### vscode activate - Windows
 with any PY file open in vscode, point vscode to your new venv: 
@@ -57,7 +63,7 @@ $ pip freeze > requirements.txt
 
 To replicate someone else's venv
 ```
-$ pip install -r C:\Users\stevewatkins\AppData\Local\Programs\Python\Python311\code_louisville\Scripts\requirements.txt
+$ pip install -r requirements.txt C:\Users\stevewatkins\AppData\Local\Programs\Python\Python311\code_louisville\Scripts\requirements.txt
 ```
 ## .gitignore
 A .gitignore file is used by git to ignore files, filtered by pattern or explicit name. Pathing should be relative.
@@ -65,8 +71,3 @@ A .gitignore file is used by git to ignore files, filtered by pattern or explici
 Templates abound: 
 - https://www.toptal.com/developers/gitignore/  (Use tags "Python" & "VisualStudioCode")
 - https://github.com/microsoft/vscode-python/blob/main/.gitignore
-
-## test pytest
-```
-pytest
-```

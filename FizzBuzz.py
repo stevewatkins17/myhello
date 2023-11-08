@@ -9,7 +9,7 @@ def getFizzBuzz(num):
     elif num % 5 == 0:
         result = "Buzz"
 
-    return result
+    return result #idempotent
 
 def main(num = None):
     if num == None:

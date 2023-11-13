@@ -53,6 +53,6 @@ print(f"total_calc:{total_calc}")
 print(f"shifted_char:{shifted_char}")
 
 for _ in range(0,200):
-    print(f"n:{_}; chr:{chr(_)}")
+    print(f"{_}:{chr(_)}")
 
 

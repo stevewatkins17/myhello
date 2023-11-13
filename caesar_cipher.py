@@ -25,10 +25,15 @@ print("Encrypted Text:", encrypted_text)
 print("Decrypted Text:", decrypted_text)
 
 shift = 3
-char = "Y"
+char = "a"
 is_upper = char.isupper()
 shifted_char = chr((ord(char) - ord('A' if is_upper else 'a') + shift) % 26 + ord('A' if is_upper else 'a'))
 
+ord_char = ord(char)
+print(f"ord_char:{ord_char}")
+
+chr_char_n = chr(95)
+print(f"chr_char_n:{chr_char_n}")
 
 inner_0 = ord(char) - ord('A' if is_upper else 'a')
 print(f"inner_0:{inner_0}")
@@ -46,4 +51,8 @@ total_calc = (ord(char) - ord('A' if is_upper else 'a') + shift) % 26 + ord('A' 
 print(f"total_calc:{total_calc}")
 
 print(f"shifted_char:{shifted_char}")
+
+for _ in range(0,200):
+    print(f"n:{_}; chr:{chr(_)}")
+
 

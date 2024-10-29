@@ -11,6 +11,7 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+code_louisville/
 .Python
 build/
 develop-eggs/

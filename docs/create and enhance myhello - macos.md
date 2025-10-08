@@ -26,8 +26,16 @@ source ./code_louisville/bin/activate
 python -m pip install pyodbc
 python -m pip install pytz
 python -m pip install pytest
-```
+python -m pip install ipykernel
+python -m pip install notebook
+python -m pip install pandas
+python -m pip install requests
 
+```
+### 1 Big CMD
+```
+python -m pip install pyodbc pytz pytest ipykernel notebook pandas requests
+```
 ## requirements.txt
 In our repo, to recreate our venv.
 

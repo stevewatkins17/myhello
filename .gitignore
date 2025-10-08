@@ -11,6 +11,8 @@ __pycache__/
 *.so
 
 # Distribution / packaging
+.vscode/
+myhello.code-workspace
 code_louisville/
 .Python
 build/

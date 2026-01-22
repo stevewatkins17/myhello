@@ -60,8 +60,6 @@ python -m pip install pyodbc pytz pytest ipykernel notebook pandas requests
 ```
 
 ## requirements.txt
-In our repo, to recreate our venv.
-
 ```
 $ pip freeze > requirements.txt
 ```

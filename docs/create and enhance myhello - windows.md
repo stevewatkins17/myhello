@@ -6,30 +6,39 @@ env: base PY 3.12 on Windows 11
 vscode: with Python & Jupyter extensions
 
 # my first enhancements
-
-##
-this readme.md
+- create local repo 
+- create venv
+- install packages
 
 ## create venv
-venv: cl_fall2025
+venv: cl_jan2026
 env: base PY 3.12 on Windows 11
 
 Windows Terminal workflow & vscode activate
 
-### create project folder "C:\Users\stevewatkins\Downloads\repos\myhello", then switch into it
+### clone existing, then switch into it
 ```
-C:\Users\stevewatkins\Downloads\repos> mkdir myhello
-C:\Users\stevewatkins\Downloads\repos> cd myhello
+cd "C:\Users\stevewatkins\Downloads\repos"
+git clone https://github.com/stevewatkins17/myhello.git
+cd myhello
+```
+
+### Win terminal 
+```terminal
+python -m pip freeze > requirements_base.txt
 ```
 
 ### where are my Python install paths?
-```
+```GITbash
 where python
+py -V
+which pip
+which python
 ```
 
 ### in root project folder, create venv referencing your full python path executable path
 ```
-C:\Users\stevewatkins\Downloads\repos\myhello> C:\Users\stevewatkins\AppData\Local\Programs\Python\Python312\python.exe -m venv cl_fall2025
+C:\Users\stevewatkins\Downloads\repos\myhello>python.exe -m venv cl_aug2025
 ```
 
 ### activate the new venv that you just created
@@ -46,7 +55,7 @@ python -m pip install pytz
 python -m pip install pytest
 python -m pip install pyodbc 
 python -m pip install ipykernel 
-python -m pip install notebook pandas
+python -m pip install pyodbc pytz pytest ipykernel notebook pandas requests
 
 ```
 
